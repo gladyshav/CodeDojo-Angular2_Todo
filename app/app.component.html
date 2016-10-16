@@ -1,0 +1,19 @@
+<nav class="ui attached menu">
+    <div class="ui container">
+        <div class="header item">
+            <h1><i class="checkmark box icon"></i> {{ title }}</h1>
+        </div>
+    </div>
+</nav>
+
+<div class="ui text container">
+    <!--<div class="ui segment form">
+        <div class="ui fluid action input">
+            <input type="text" name="title" placeholder="Что нужно сделать?" (keyup.enter)="addTodo(titleInput.value); titleInput.value = ''" #titleInput>
+            <button type="button" class="ui primary button" (click)="addTodo(titleInput.value); titleInput.value = ''">Добавить</button>
+        </div>
+    </div>-->
+    <todo-form (added)="onTodoAdded($event)"></todo-form>
+    <todo-list [todos]="todos"></todo-list>
+    
+</div>

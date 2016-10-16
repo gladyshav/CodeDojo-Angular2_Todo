@@ -1,0 +1,13 @@
+
+/*.completed{
+    text-decoration: line-through;
+}
+*/
+
+.done{
+    text-decoration: line-through;
+}
+
+.button{
+    margin-left: auto;
+}
