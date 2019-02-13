@@ -1,0 +1,16 @@
+<div class="ui raised segment" *ngIf="todos.length > 0">
+	<div id="todos" class="ui middle aligned divided selection list">
+		<!--<div class="todo item" *ngFor="let todo of todos">
+
+		<div class="ui checkbox">
+                    <input type="checkbox">
+                    <label>{{ todo }}</label>
+                </div>
+                <button type="button" class="ui red icon button"><i class="trash outline icon"></i></button>
+                
+
+            </div>-->
+		<!--<todo-item *ngFor="let todo of todos" [todo]="todo" (deleted)="onTodoDeleted(todo)"></todo-item>-->
+        <todo-item *ngFor="let todo of todos" [todo]="todo" (deleted)="onTodoDeleted($event)"></todo-item>
+	</div>
+</div>
