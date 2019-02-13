@@ -1,0 +1,9 @@
+/*#todos .item{*/
+todo-item{
+    display: flex;
+    align-items: center;
+}
+
+todo-item:not(:last-child){
+    margin-bottom: 10px;
+}
